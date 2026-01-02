@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vertical Dark</title>
+    <title>Prime Invader</title>
     <!-- <link rel="icon" href="./assets/icons/favicon.ico" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
@@ -34,10 +34,6 @@
           format("woff");
       }
 
-      /* #output {
-        min-height: 100px;
-      } */
-
       * {
         margin: 0;
         padding: 0;
@@ -53,9 +49,6 @@
         padding: 0;
         width: auto;
         height: auto;
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
         /* background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=3840&q=80")
           center/cover no-repeat; */
         background: transparent;
@@ -81,28 +74,18 @@
         max-width: 800px;
       }
 
-      .style-glass .message-wrapper {
-        /* border-radius: 70px; */
-        /* border: 3px solid rgba(255, 255, 255, 0.18); */
-      }
-
       .message-wrapper.show {
         opacity: 1;
-        /* transform: translateY(0px); */
-        /* margin: 0 2%; */
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        /* background: #353535; */
         position: absolute;
         left: 50%;
         bottom: 0;
         transform: translateX(-50%);
         width: 100%;
         max-width: 350px;
-        /* padding: 0 20px; */
         box-sizing: border-box;
-        /* border-radius: 2%; */
         margin-bottom: 1%;
       }
 
@@ -115,7 +98,7 @@
       .message::before {
         content: "";
         position: absolute;
-        bottom: -160px; /* controls curve depth */
+        bottom: -160px;
         left: 50%;
         transform: translateX(-50%);
         width: 175%;
@@ -149,15 +132,8 @@
         border-radius: 2%;
         object-fit: cover;
         flex-shrink: 0;
-        /* margin-left: 2%; */
-        /* border: 2px solid #000; */
-        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-        /* margin:2%; */
         background: whitesmoke;
-        /* border: 7px solid #b53a3a; */
         border-radius: 30px;
-        /* z-index: 99; */
-        /* position: absolute; */
         bottom: 91%;
       }
 
@@ -167,9 +143,6 @@
         gap: 30px;
         position: relative;
         padding: 0;
-        /* z-index: 99; */
-        /* backdrop-filter: blur(2px); */
-        /* margin: 0% 0%; */
         background: linear-gradient(
           to bottom,
           #b53a3a 0%,
@@ -186,7 +159,7 @@
         transform: translateY(120%);
         opacity: 0;
         animation: messageIn 0.9s ease-out forwards;
-        animation-delay: 0.9s; /* appears AFTER logo */
+        animation-delay: 0.9s;
       }
 
       .footer {
@@ -201,25 +174,11 @@
       }
 
       .username {
-        /* font-weight: 500; */
         font-size: 28px;
-        /* display: flex; */
         align-items: center;
         gap: 8px;
         font-weight: bolder;
-        /* font-size: x-large; */
-        /* margin-bottom: 1%; */
-        /* border: 1px solid #181818; */
-        /* border-radius: 60px; */
-        /* background: #fff; */
         color: #fff !important;
-        /* padding-left: 5%; */
-        /* position: absolute; */
-        /* top: 2%; */
-        /* left: 15%; */
-        /* z-index: 99; */
-        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px; */
-        /* align-items: center; */
         overflow-wrap: anywhere;
         text-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
         text-align: center;
@@ -242,7 +201,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        mix-blend-mode: screen; /* TikTok-safe */
+        mix-blend-mode: screen;
         opacity: 0.6;
         pointer-events: none;
       }
@@ -287,7 +246,6 @@
         display: flex;
         gap: 4px;
         align-items: center;
-        /* height: 18px; */
         position: absolute;
         z-index: 99;
         top: 310px;
